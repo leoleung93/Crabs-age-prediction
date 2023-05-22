@@ -1,0 +1,35 @@
+AM Technical task
+
+Files Description:
+
+best_xgb.dat - model: XGBoost, should be in the same folder as the program
+
+prediction_model.py - Program to predict using the model data
+	output a files with following fields:
+Sex, Length, Diameter, Height, Weight, Shucked Weight, Viscera Weight, Shell Weight, Age, Predicted Age
+
+
+evaluation.py - Program to output stats: 
+	MSE,RMSE,MAE,R2, descriptive statistics of the results
+
+
+Instruction:
+
+1. Check if all the packages are installed:
+
+pandas, numpy, sklearn, test_dataset.csv 
+
+2. Check if the all the required files are in the same folder:
+
+best_xgb.dat, prediction_model.py, evaluation.py
+
+3. Change directory to the folder in console
+
+4. run the model from console using the following command:
+
+cat ../data/test_data.csv | python prediction_model.py | python evaluation.py > stats.log
+
+
+
+
+The result should be saved in the same folder of the problem.
